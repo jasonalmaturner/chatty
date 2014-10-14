@@ -3,6 +3,10 @@
 </div>
 
 <h4>Latest Chats:</h4>
-<div class="jumbotron">
-
+<div class="jumbotron" ng-controller="MessageCtrl">
+	<form ng-submit="addMessage()">
+		<input ng-model='message'>
+	</form>
+	<div ng-repeat="key in messages track by $index">{{key}}
+	</div>
 </div>
