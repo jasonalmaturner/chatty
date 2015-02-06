@@ -2,10 +2,10 @@
   "name": "chatty",
   "version": "1.0.0",
   "description": "basic chatroom",
-  "main": "expressServer.js",
+  "main": "express.js",
   "dependencies": {
     "body-parser": "^1.9.0",
-    "express": "^4.9.7"
+    "express": "^4.11.2"
   },
   "devDependencies": {},
   "scripts": {

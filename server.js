@@ -1,5 +1,6 @@
 var onRequest = function(req, res) {
 	if(req.method === 'OPTIONS'){
+		console.log('am i her')
 		res.writeHead(200, {
 			'Access-Control-Allow-Origin': '*',
 			'Access-Control-Allow-Methods': 'OPTIONS, GET, POST',
@@ -44,5 +45,5 @@ var randomMessage = function(message){
 
 var http = require('http');
 http.createServer(onRequest).listen(9001);
-console.log('listening so hard');
+console.log('listening so hard on port ' + 9001);
 var messages = ["Hey brother", "Her?", "I made a huge mistake", 'Chaw chee chaw chee chaw', 'There is always money in the banana stand', 'Quit essing around', 'Im a monster!'];
